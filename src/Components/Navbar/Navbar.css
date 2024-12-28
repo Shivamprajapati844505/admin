@@ -1,0 +1,57 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #23401d;
+  padding: 18px 20px;
+  position:sticky;
+  top: 0;
+}
+
+.nav-left {
+  color: #fff;
+  font-family: "Poppins";
+  font-style: normal;
+  display: flex;
+  justify-content: space-evenly; 
+  align-items: center; 
+}
+
+.nav-right {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+}
+.nav-left img{
+ width: 50px;
+}
+.nav-left h1 a{
+  color: #ef511a;
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 22px;
+  margin-left: 20px; 
+}
+.nav-right li a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  transition: color 0.4s ease, text-decoration-color 0.4s ease; /* Smooth transition */
+}
+
+.nav-right li a:hover {
+  text-decoration: underline; 
+  text-decoration-color: #ef511a;
+  text-underline-offset: 6px;
+}
+
+.nav-right li a:active {
+  text-decoration: underline; /* Freeze underline */
+  text-decoration-color: #ef511a; /* Keep the same underline color */
+  text-underline-offset: 6px; /* Maintain offset */
+  transition: none; /* Stop transition effect */
+  color: #ef511a; /* Keep text color */
+}
